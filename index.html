@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book Story</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,800;0,900;1,200;1,300;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class ="navbar">
+        <h2>BookStory</h2>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Strong boy Talent boy</h2>
+            <h5>Robert</h4>
+            <p>Once upon a time in a small village two brothers studying and growing in their village, elder brother is talented guy in studies but younger brother is stronger in farming and he is average in studies and that's correct! they are farmers children.Later the younger brother is doing agriculture in his land and the elder brother is doing Government Job in a good position.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
